@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 407114666, guid: e1321ab61cdccbf41a9a96571e8f20d4, type: 3}
+      propertyPath: m_Speed
+      value: 4.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1196918957608765966, guid: e1321ab61cdccbf41a9a96571e8f20d4, type: 3}
       propertyPath: health
       value: 25
@@ -85,6 +89,20 @@ CapsuleCollider:
   m_Height: 2.360992
   m_Direction: 1
   m_Center: {x: 0, y: 0.8806248, z: 0}
+--- !u!114 &1611279184712828005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4611346379530088139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbf3d6a66fa8a7f49944439dda22c2fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chaseDistance: 5
+  suspicionTime: 3
 --- !u!114 &7939372668784234425
 MonoBehaviour:
   m_ObjectHideFlags: 0

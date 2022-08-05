@@ -1,3 +1,4 @@
+using RPG.Core;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -28,6 +29,7 @@ namespace RPG.Combat
             if (isDead) return;
             isDead = true;
             GetComponent<Animator>().SetTrigger("die");
+            GetComponent<Scheduler>().CancelCurrentAction();
         }
     }
 }
