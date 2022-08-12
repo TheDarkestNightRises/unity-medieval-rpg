@@ -67,6 +67,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6601348633385301384, guid: e1321ab61cdccbf41a9a96571e8f20d4, type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 936f0778935fbff49a0fa9758847645c, type: 2}
+    - target: {fileID: 6601348633385301384, guid: e1321ab61cdccbf41a9a96571e8f20d4, type: 3}
+      propertyPath: defaultWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 936f0778935fbff49a0fa9758847645c, type: 2}
+    - target: {fileID: 6601348633385301384, guid: e1321ab61cdccbf41a9a96571e8f20d4, type: 3}
+      propertyPath: handTransform
+      value: 
+      objectReference: {fileID: 7584300227168190316}
+    - target: {fileID: 6601348633385301384, guid: e1321ab61cdccbf41a9a96571e8f20d4, type: 3}
+      propertyPath: leftHandTransform
+      value: 
+      objectReference: {fileID: 7584300227168247662}
+    - target: {fileID: 6601348633385301384, guid: e1321ab61cdccbf41a9a96571e8f20d4, type: 3}
+      propertyPath: rightHandTransform
+      value: 
+      objectReference: {fileID: 7584300227168190316}
     m_RemovedComponents:
     - {fileID: 6601348633385301379, guid: e1321ab61cdccbf41a9a96571e8f20d4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e1321ab61cdccbf41a9a96571e8f20d4, type: 3}
@@ -181,3 +201,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30cf93deff988e74e88a144bd2127c18, type: 3}
+--- !u!4 &7584300227168190316 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 423694, guid: 30cf93deff988e74e88a144bd2127c18, type: 3}
+  m_PrefabInstance: {fileID: 7584300227167799394}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7584300227168247662 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 481036, guid: 30cf93deff988e74e88a144bd2127c18, type: 3}
+  m_PrefabInstance: {fileID: 7584300227167799394}
+  m_PrefabAsset: {fileID: 0}
