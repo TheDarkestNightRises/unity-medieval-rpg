@@ -102,7 +102,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.67
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -138,7 +138,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 8e-45, z: 1.0468e-41, w: 6e-44}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -340,28 +340,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1070249845696492694, guid: f3ef9d0dbeb7dd84cb030c3eb5607ee9, type: 3}
   m_PrefabInstance: {fileID: 7822445265211732326}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &7085466331185038835 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1070249845696492693, guid: f3ef9d0dbeb7dd84cb030c3eb5607ee9, type: 3}
-  m_PrefabInstance: {fileID: 7822445265211732326}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1972920821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7085466331185038835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: 6d3f30cc91c5d7249a3ac360d55db03b, type: 2}
-  isGlobal: 1
-  blendDistance: 0
-  weight: 1
-  priority: 0
 --- !u!1001 &8361463522279462671
 PrefabInstance:
   m_ObjectHideFlags: 0
