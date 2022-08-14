@@ -34,6 +34,11 @@ namespace RPG.Combat
             weapon.Spawn(rightHandTransform,leftHandTransform,animator);
         }
 
+        public Health GetTarget()
+        {
+            return target;
+        }
+
         private void Update()
         {
             timeSinceLastAttack += Time.deltaTime;
@@ -124,7 +129,7 @@ namespace RPG.Combat
             return currentWeapon.name;
         }
 
-        public void RestoreState(object state)
+        public void RestoreState(object state)  
         {
             String weaponName = (String)state;
             Weapon weapon = Resources.Load<Weapon>(weaponName);

@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: chaseDistance
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 3171809885740534518, guid: 40901ded934bc8f46be8bd6a64418c4c, type: 3}
+      propertyPath: characterClass
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4611346379530088139, guid: 40901ded934bc8f46be8bd6a64418c4c, type: 3}
       propertyPath: m_Name
       value: Archer

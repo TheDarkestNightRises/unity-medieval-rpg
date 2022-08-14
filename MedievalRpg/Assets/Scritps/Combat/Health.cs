@@ -1,5 +1,6 @@
 using RPG.Core;
 using RPG.Saving;
+using RPG.Stats;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,10 @@ namespace RPG.Combat
         [SerializeField] float healthPoints = 100f;
         bool isDead = false;
 
+        private void Start()
+        {
+            healthPoints = GetComponent<BaseStats>().GetHealth();
+        }
 
         public bool IsDead()
         {
@@ -49,6 +54,10 @@ namespace RPG.Combat
             }
         }
 
+        public float GetPercentage()
+        {
+            return 100 * (healthPoints / GetComponent<BaseStats>().GetHealth());
+        }
     }
 }
 
