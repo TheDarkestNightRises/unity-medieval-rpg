@@ -4,10 +4,11 @@ using RPG.Core;
 using System;
 using RPG.Saving;
 using RPG.Stats;
+using System.Collections.Generic;
 
 namespace RPG.Combat
 {
-    public class Fighter : MonoBehaviour, IAction, ISaveable
+    public class Fighter : MonoBehaviour, IAction, ISaveable,IModifierProvider
     {
   
         [SerializeField] float timeBetweenAttacks = 1f;
@@ -138,7 +139,20 @@ namespace RPG.Combat
             EquipWeapon(weapon);
         }
 
-        
+        public IEnumerable<float> GetAdditiveModifier(Stat stat)
+        {
+            if (stat == Stat.Damage)
+            {
+                yield return currentWeapon.GetDamage();
+            }
+        }
 
+        public IEnumerable<float> GetPercentagesModifier(Stat stat)
+        {
+            if (stat == Stat.Damage)
+            {
+                yield return currentWeapon.GetPercentageBonus();
+            }
+        }
     }
 }

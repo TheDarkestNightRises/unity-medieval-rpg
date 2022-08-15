@@ -16,13 +16,10 @@ namespace RPG.Combat
 
         private void Start()
         {
-            print(healthPoints);
             GetComponent<BaseStats>().onLevelUp += RegenerateHealth;
             if (healthPoints <= 0f)
             {
-                print("Look up for health");
                 healthPoints = GetComponent<BaseStats>().GetStat(Stat.Health);
-                print(healthPoints);
             }
         }
 
