@@ -8,17 +8,17 @@ using UnityEngine.UI;
 
 namespace RPG.Stats
 {
-    public class HealthDisplay : MonoBehaviour
+    public class LevelDisplay : MonoBehaviour
     {
-        Health health;
+        BaseStats stats;
         private void Awake()
         {
-            health = GameObject.FindWithTag("Player").GetComponent<Health>();
+            stats = GameObject.FindWithTag("Player").GetComponent<BaseStats>();
         }
 
         private void Update()
         {
-            GetComponent<TextMeshProUGUI>().text = String.Format("{0:0}%", health.GetPercentage());
+            GetComponent<TextMeshProUGUI>().text = String.Format("{0:0}%", stats.GetLevel());
         }
     }
 }
