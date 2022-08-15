@@ -10,14 +10,19 @@ namespace RPG.Combat
 {
     public class Health : MonoBehaviour,ISaveable
     {
-        [SerializeField] float healthPoints = -1f;
+        [SerializeField] float regenerationPercentage = 70;
+        float healthPoints = -1f;
         bool isDead = false;
 
         private void Start()
         {
+            print(healthPoints);
+            GetComponent<BaseStats>().onLevelUp += RegenerateHealth;
             if (healthPoints <= 0f)
             {
+                print("Look up for health");
                 healthPoints = GetComponent<BaseStats>().GetStat(Stat.Health);
+                print(healthPoints);
             }
         }
 
@@ -28,12 +33,29 @@ namespace RPG.Combat
 
         public void TakeDamage(GameObject instigator, float damage)
         {
+            Debug.Log(instigator.name + " dealt damage: " + damage + " to " + gameObject.name);
             healthPoints = Mathf.Max(healthPoints - damage,0);
             if (healthPoints == 0)
             {
                 Die();
                 AwardExperience(instigator);
             }
+        }
+
+        private void RegenerateHealth()
+        {
+            float regenhealthPoints = GetComponent<BaseStats>().GetStat(Stat.Health) * (regenerationPercentage/100);
+            healthPoints = Mathf.Max(healthPoints , regenhealthPoints);
+        }
+
+        public float GetHealthPoints()
+        {
+            return healthPoints;
+        }
+
+        public float GetMaxHealthPoints()
+        {
+            return GetComponent<BaseStats>().GetStat(Stat.Health);
         }
 
         private void Die()
@@ -60,7 +82,7 @@ namespace RPG.Combat
         public void RestoreState(object state)
         {
             healthPoints = (float)state;
-            if (healthPoints == 0)
+            if (healthPoints <= 0)
             {
                 Die();
             }

@@ -22,7 +22,7 @@ public class EnemyHealthDisplay : MonoBehaviour
         }
         else
         {
-            GetComponent<TextMeshProUGUI>().text = String.Format("{0:0}%", fighter.GetTarget().GetPercentage());
+            GetComponent<TextMeshProUGUI>().text = String.Format("{0:0}/{1:0}", fighter.GetTarget().GetHealthPoints(), fighter.GetTarget().GetMaxHealthPoints());
         }
     }
 }

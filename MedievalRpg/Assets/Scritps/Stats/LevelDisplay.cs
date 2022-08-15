@@ -18,7 +18,7 @@ namespace RPG.Stats
 
         private void Update()
         {
-            GetComponent<TextMeshProUGUI>().text = String.Format("{0:0}%", stats.GetLevel());
+            GetComponent<TextMeshProUGUI>().text = String.Format("{0:0}", stats.GetLevel());
         }
     }
 }

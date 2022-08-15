@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7752937042373818219}
   - component: {fileID: 3010248994883524745}
   - component: {fileID: 6771382147436920596}
-  - component: {fileID: 8152945309807420993}
+  - component: {fileID: 1617899175888732799}
   m_Layer: 5
   m_Name: 'Experience Value  '
   m_TagString: Untagged
@@ -136,7 +136,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &8152945309807420993
+--- !u!114 &1617899175888732799
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -159,7 +159,7 @@ GameObject:
   - component: {fileID: 4359063086955848065}
   - component: {fileID: 990693155294221062}
   - component: {fileID: 5334983635070636784}
-  - component: {fileID: 3496752193960078568}
+  - component: {fileID: 1685137747125220892}
   m_Layer: 5
   m_Name: 'Enemy Health Value '
   m_TagString: Untagged
@@ -284,7 +284,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &3496752193960078568
+--- !u!114 &1685137747125220892
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -307,7 +307,7 @@ GameObject:
   - component: {fileID: 5772796241535887936}
   - component: {fileID: 8168647997373913505}
   - component: {fileID: 4230269538671539271}
-  - component: {fileID: 2102267555302712887}
+  - component: {fileID: 6297371764946245216}
   m_Layer: 5
   m_Name: Health Value
   m_TagString: Untagged
@@ -432,7 +432,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &2102267555302712887
+--- !u!114 &6297371764946245216
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -455,7 +455,7 @@ GameObject:
   - component: {fileID: 4238803860044239339}
   - component: {fileID: 1674363877626654533}
   - component: {fileID: 8561345426043856886}
-  - component: {fileID: 7333267758398988118}
+  - component: {fileID: 7871682725247645810}
   m_Layer: 5
   m_Name: 'Level Value   '
   m_TagString: Untagged
@@ -580,7 +580,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &7333267758398988118
+--- !u!114 &7871682725247645810
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -589,7 +589,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3482744547546355670}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b2638376de26c445be09e64f387af44, type: 3}
+  m_Script: {fileID: 11500000, guid: 59a48bed6e5009d4bb372bce656dc3e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &5957080398757360111
