@@ -6,12 +6,17 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace RPG.Combat
 {
     public class Health : MonoBehaviour,ISaveable
     {
         [SerializeField] float regenerationPercentage = 70;
+        [SerializeField] UnityEvent<float> takeDamage;
+
+        [System.Serializable]
+        public class TakeDamageEvent : UnityEvent<float> { }
 
         LazyValue<float> healthPoints;
 
@@ -52,6 +57,7 @@ namespace RPG.Combat
         {
             Debug.Log(instigator.name + " dealt damage: " + damage + " to " + gameObject.name);
             healthPoints.value = Mathf.Max(healthPoints.value - damage,0);
+            takeDamage.Invoke(damage);
             if (healthPoints.value == 0)
             {
                 Die();
@@ -107,7 +113,12 @@ namespace RPG.Combat
 
         public float GetPercentage()
         {
-            return 100 * (healthPoints.value / GetComponent<BaseStats>().GetStat(Stat.Health));
+            return 100 * GetFraction();
+        }
+
+        public float GetFraction()
+        {
+            return (healthPoints.value / GetComponent<BaseStats>().GetStat(Stat.Health));
         }
     }
 }
