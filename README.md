@@ -1,7 +1,7 @@
 
 # Medieval rpg ⚔
 
-A medieval rpg set in a medieval fantasy. Conquer lands and try to finish your quests.
+A role play game set in a medieval fantasy. Conquer lands and try to finish your quests.
 
 ## Features
 
